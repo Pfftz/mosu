@@ -16,11 +16,16 @@ import BackToTop from '@/components/shared/BackToTop/BackToTop';
 import ITSolutionStep from '@/components/step/ITSolutionStep';
 import SearchArea from '@/components/search-area/SearchArea';
 import ITSolutionFaq from '@/components/faq/ITSolutionFaq';
+import CreativeStudioHero from '@/components/hero-banner/CreativeStudioHero';
+import StartupAgencyAbout from '@/components/about/StartupAgencyAbout';
+import StartupAgencyPortfolio from '@/components/portfolio/StartupAgencyPortfolio';
+import DesignStudioFooter from '@/layouts/footers/DesignStudioFooter';
+import DesignStudioProject from '@/components/project/DesignStudioProject';
 
 const ITSolutionMain = () => {
     return (
         <ScrollSmoothProvider>
-            <CursorAndBackgroundProvider bgColor='#08041D'>
+            <CursorAndBackgroundProvider bgColor="#08041D">
                 <AnimationWrapper>
                     {/* Magic cursor element */}
                     <div id="magic-cursor">
@@ -32,23 +37,22 @@ const ITSolutionMain = () => {
                     <SearchArea />
                     <ITSolutionHeader />
 
-                    <div id="smooth-wrapper" style={{ backgroundColor: "#FDF7F4" }}>
+                    <div
+                        id="smooth-wrapper"
+                        style={{ backgroundColor: "#FDF7F4" }}
+                    >
                         <div id="smooth-content">
                             {/* Main Content Sections */}
                             <main>
-                                <ITSolutionHero />
-                                <ITSolutionStep />
-                                <ITSolutionBrand />
+                                <CreativeStudioHero />
                                 <ITSolutionFeature />
-                                <ITSolutionAbout />
-                                <ITSolutionProject />
-                                <ITSolutionBrandTwo />
-                                <ITSolutionTestimonial />
-                                <ITSolutionComparison />
+                                <StartupAgencyAbout />
+                                <StartupAgencyPortfolio />
+                                <DesignStudioProject />
                                 <ITSolutionBenifit />
                                 <ITSolutionFaq />
                             </main>
-                            <ITSolutionFooter />
+                            <DesignStudioFooter />
                         </div>
                     </div>
                 </AnimationWrapper>
